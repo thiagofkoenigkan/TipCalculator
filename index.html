@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator</title>
+
+  <link rel="shortcut icon" href="./css/favicon-32x32.png" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+  <div class="logo">
+    <img src="./css/logo.svg" alt="Logo">
+  </div>
+
+  <div class="calc-body">
+    <div class="valors">
+      <fieldset>
+        <legend>Bill</legend>
+        <input class="bill" type="number" name="" id="bill" value="0">
+      </fieldset>
+
+      <fieldset>
+        <legend>Number Of People</legend>
+        <p id="people-erro" class="erro-inativo">Can't be zero!</p>
+        <input class="numberpeople" type="number" name="" id="inputPeople" value="0">
+      </fieldset>
+
+      <fieldset>
+        <legend>Select Tip %</legend>
+        <div class="tips">
+        <button class="tip">5%</button>
+        <button class="tip">10%</button>
+        <button class="tip">15%</button>
+        <button class="tip">25%</button>
+        <button class="tip">50%</button>
+        
+        <input type="number" class="tip-custom" placeholder="Custom">
+        
+        </div>
+      </fieldset>
+
+      
+    </div>
+
+    <div class="results">
+      <div class="results-valores">
+        <div class="tip-amount">
+        <p class="firstP">Tip Amount</p>
+        <p class="secondP">/ person</p>
+        </div>
+
+        <p class="amountP">$0</p>
+
+        <div class="tip-total">
+        <p class="firstP">Total</p>
+        <p class="secondP">/ person</p>
+        </div>
+
+        <p class="totalP">$0</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/main.js"></script>
+</body>
+</html>
